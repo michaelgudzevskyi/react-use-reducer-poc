@@ -1,9 +1,6 @@
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header"> </header>
-    </div>
-  )
-}
+import { FC } from 'react'
+import Bootstrap from './Bootstrap'
+
+const App: FC = () => <Bootstrap />
 
 export default App
