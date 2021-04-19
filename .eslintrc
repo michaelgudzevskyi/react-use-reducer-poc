@@ -1,0 +1,64 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true,
+      "mocha": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "standard",
+      "prettier",
+      "prettier/standard",
+      "plugin:security/recommended"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "array-callback-return": "error",
+      "complexity": ["error", 3],
+      "max-statements": ["error", 13],
+      "max-statements-per-line": [
+        "error",
+        {
+          "max": 1
+        }
+      ],
+      "max-nested-callbacks": ["error", 2],
+      "max-depth": [
+        "error",
+        {
+          "max": 2
+        }
+      ],
+      "max-lines": ["error", 150],
+      "no-eval": "error",
+      "no-return-assign": "error",
+      "no-param-reassign": "error",
+      "no-var": "error",
+      "prefer-const": "error",
+      "no-console": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/prop-types": 0
+    },
+    "plugins": ["react", "react-hooks", "security", "prettier"]
+  }
+  
